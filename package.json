@@ -1,10 +1,14 @@
 {
   "name": "recipesbackend",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.16.3"
+  },
   "description": "ejemplo de api con express js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "developer": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Miguel Agudelo",
@@ -13,6 +17,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "connect-multiparty": "^2.2.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.6.2",
