@@ -427,10 +427,7 @@ var controller = {
             if(exists){
                 return res.sendFile(path.resolve(path_file));
             }else{
-                return res.status(404).send({
-                    status: 'error',
-                    message: 'La imagen no existe !!!'
-                });
+                return res.sendFile(path.resolve('./upload/recipes/coctelera.jpg'));
             }
         });
     },
